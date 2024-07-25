@@ -46,4 +46,4 @@ Here are some ideas to get you started:
 </div>
 
 
-![snake animation](https://github.com/Pablios/Pablios/blob/output/contribution-grid.svg)
+![snake animation](https://github.com/Pablios/Pablios/blob/output/github-contribution-grid-snake.svg)
