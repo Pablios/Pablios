@@ -49,7 +49,7 @@ def generate_svg(filtered_commits):
     grid = [[0] * columns for _ in range(rows)]
 
     # Simular a geração do SVG (exemplo básico)
-    with open('dist/contribution-grid.svg', 'w') as f:
+    with open('dist/github-contribution-grid-snake.svg', 'w') as f:
         f.write(f'<svg width="{width}" height="{height}" xmlns="http://www.w3.org/2000/svg">')
         for i, commit in enumerate(filtered_commits):
             # Lógica para determinar a posição e cor do commit
