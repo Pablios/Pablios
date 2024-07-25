@@ -1,12 +1,13 @@
 import requests
 from datetime import datetime
+import os
 
 # Configurações
 repo_owner = 'Pablios'
 repo_name = 'Pablios'
 year = 2024
 api_url = f'https://api.github.com/repos/{repo_owner}/{repo_name}/commits'
-token = 'ACTIONS_PAT'  # Substitua pelo seu token de acesso pessoal
+token = os.getenv('ACTIONS_PAT')
 
 # Função para obter commits da API
 def get_commits():
@@ -38,10 +39,10 @@ def generate_svg(filtered_commits):
     rows = height // cell_size
     grid = [[0] * columns for _ in range(rows)]
 
-    # Simular a geração do SVG (exemplo básico)
-    with open('contribution-grid.svg', 'w') as f:
+    with open('dist/contribution-grid.svg', 'w') as f:
         f.write(f'<svg width="{width}" height="{height}" xmlns="http://www.w3.org/2000/svg">')
         for i, commit in enumerate(filtered_commits):
+            # Lógica para determinar a posição e cor do commit
             x = (i % columns) * cell_size
             y = (i // columns) * cell_size
             f.write(f'<rect x="{x}" y="{y}" width="{cell_size}" height="{cell_size}" fill="green"/>')
