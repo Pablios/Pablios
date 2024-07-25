@@ -24,8 +24,6 @@ jobs:
       - name: Install dependencies
         run: |
           pip install requests
-          pip install pillow
-          pip install cairosvg
 
       - name: Run script
         run: |
