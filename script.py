@@ -32,8 +32,15 @@ def get_commits():
 def filter_commits(commits):
     return [commit for commit in commits if datetime.strptime(commit['commit']['committer']['date'], "%Y-%m-%dT%H:%M:%SZ").year == year]
 
+# Criar diretório dist se não existir
+def ensure_dist_directory():
+    if not os.path.exists('dist'):
+        os.makedirs('dist')
+
 # Gerar o SVG
 def generate_svg(filtered_commits):
+    ensure_dist_directory()
+
     width = 800
     height = 600
     cell_size = 10
