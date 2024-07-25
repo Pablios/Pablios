@@ -7,7 +7,7 @@ repo_owner = 'Pablios'
 repo_name = 'Pablios'
 year = 2024
 api_url = f'https://api.github.com/repos/{repo_owner}/{repo_name}/commits'
-token = os.getenv('ACTIONS_PAT')
+token = os.getenv('ACTIONS_PAT')  # Use a variável de ambiente para o token
 
 # Função para obter commits da API
 def get_commits():
@@ -18,7 +18,9 @@ def get_commits():
     page = 1
     while True:
         response = requests.get(api_url, headers=headers, params={'page': page, 'per_page': 100})
-        response.raise_for_status()
+        if response.status_code != 200:
+            print(f'Error: {response.status_code} - {response.text}')
+            response.raise_for_status()
         data = response.json()
         if not data:
             break
@@ -39,6 +41,7 @@ def generate_svg(filtered_commits):
     rows = height // cell_size
     grid = [[0] * columns for _ in range(rows)]
 
+    # Simular a geração do SVG (exemplo básico)
     with open('dist/contribution-grid.svg', 'w') as f:
         f.write(f'<svg width="{width}" height="{height}" xmlns="http://www.w3.org/2000/svg">')
         for i, commit in enumerate(filtered_commits):
