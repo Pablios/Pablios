@@ -7,7 +7,7 @@ repo_owner = 'Pablios'
 repo_name = 'Pablios'
 year = 2024
 api_url = f'https://api.github.com/repos/{repo_owner}/{repo_name}/commits'
-token = os.getenv('ACTIONS_PAT')  # Use a variável de ambiente para o token
+token = os.getenv('GITHUB_TOKEN')
 
 # Função para obter commits da API
 def get_commits():
