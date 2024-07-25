@@ -1,8 +1,5 @@
 ## Hi there 👋
 
-### Jogue o jogo da cobrinha no meu perfil!
-![Snake animation](https://github.com/USERNAME/USERNAME/blob/output/github-contribution-grid-snake.svg)
-
 <!--
 **Pablios/Pablios** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
