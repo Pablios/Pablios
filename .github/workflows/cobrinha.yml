@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - temp-2024
+      - main
 
 jobs:
   build:
@@ -16,12 +16,20 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Generate the snake files
-        uses: Platane/snk@v3
+      - name: Set up Python
+        uses: actions/setup-python@v3
         with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-contribution-grid-snake.svg
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          pip install requests
+
+      - name: Run script
+        run: |
+          python script.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
