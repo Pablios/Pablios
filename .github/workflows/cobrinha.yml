@@ -37,4 +37,4 @@ jobs:
           personal_token: ${{ secrets.ACTIONS_PAT }}
           publish_dir: ./dist
           publish_branch: output
-          commit_message: "Update snake animation for 2024"
+          commit_message: "New Update snake animation for 2024"
