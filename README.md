@@ -1,5 +1,3 @@
-Hi there! 👋 I'm Pablo
-
 <!--
 **Pablios/Pablios** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
@@ -10,6 +8,9 @@ Here are some ideas to get you started:
 - 📫 How to reach me: ...
 - 😄 Pronouns: ...
 -->
+
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=79FF97&background=FFFFFF00&random=false&width=435&lines=Ol%C3%A1%2C+Hi+there!+I'm+Pablo!) <img align="right" alt="meimage" height="300px" src="./images/me.png">
+
 
 <div>
   <a href="https://github.com/Pablios">
