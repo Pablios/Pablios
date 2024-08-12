@@ -11,11 +11,11 @@ Here are some ideas to get you started:
 
 ![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=79FF97&background=FFFFFF00&random=false&width=435&lines=Hi+there!+I'm+Pablo!)
 
-
 <div>
   <a href="https://github.com/Pablios">
-    <img heigth="180em" src="https://github-readme-stats.vercel.app/api?username=pablios&show_icons=true&include_all_commits=true&theme=dracula"/>
+    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Pablios&show_icons=true&include_all_commits=true&theme=dracula"/>
     <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs?username=pablios&layout=compact&include_all_commits=true&card_width=320&theme=dracula" />
+  </a>
 </div>
 
 <div style="display: inline_block"><br>
