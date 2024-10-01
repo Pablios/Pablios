@@ -9,6 +9,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 -->
 
+
 ![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=79FF97&background=FFFFFF00&random=false&width=435&lines=Hi+there!+I'm+Pablo!)
 
 <div style="display: inline_block"><br>
